@@ -15,7 +15,7 @@ How?
 
 Using `Microsoft.Extensions.Configuration.ConfigurationBinder.Bind` you can bind a json file to a class.
 
-That way yo can bind `appsettings.json` to a class in `depa`.
+That way you can bind `appsettings.json` to a class in `depa`.
 
 To get `depb` configuration passed to it, it has to be sent into a `depb` class constructor.  The `depa` configuration class has to contain a `DepBConfiguration` property on it so that when `app` binds `appsettings.json` it can use `DepBConfiguration` values to bind. See the `appsettings.json` file in the repo.
 
