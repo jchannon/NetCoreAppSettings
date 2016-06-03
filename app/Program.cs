@@ -16,8 +16,11 @@ namespace app
 
             var config = builder.Build();
 
-            var appConfig = new AppConfiguration();
-            ConfigurationBinder.Bind(config, appConfig);
+            var depAConfig = new DepAConfiguration();
+            ConfigurationBinder.Bind(config, depAConfig);
+
+            var depbConfig = new DepBConfiguration();
+            ConfigurationBinder.Bind(config, depbConfig);
 
             var depaClass = new DepAClass();
             depaClass.DepAMethod();

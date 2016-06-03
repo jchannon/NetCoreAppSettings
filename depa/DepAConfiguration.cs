@@ -1,6 +1,6 @@
-namespace app
+namespace depa
 {
-    public class AppConfiguration
+    public class DepAConfiguration
     {
         public Logging Logging { get; set; }
         public Smtp Smtp { get; set; }
