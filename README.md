@@ -6,6 +6,6 @@ This has a dependency on `depa`.
 
 `depa` depends on `depb`
 
-`depb` may also want to use the configuration class to retrieve a connection string for example
+`depb` may also want to use the configuration class to retrieve a connection string for example or even just a `ConfigurationManager.AppSettings["blah"]` alternative
 
 How?
