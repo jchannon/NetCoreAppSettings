@@ -6,10 +6,10 @@ namespace depa
     {
         public Logging Logging { get; set; }
         public Smtp Smtp { get; set; }
-
         public DepBConfiguration DepBConfiguration { get; set; }
-    }
     
+    }
+
     public class LogLevel
     {
         public string Default { get; set; }
@@ -21,13 +21,5 @@ namespace depa
     {
         public bool IncludeScopes { get; set; }
         public LogLevel LogLevel { get; set; }
-    }
-
-    public class Smtp
-    {
-        public string Server { get; set; }
-        public string User { get; set; }
-        public string Pass { get; set; }
-        public string Port { get; set; }
     }
 }

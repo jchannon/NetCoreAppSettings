@@ -19,8 +19,10 @@ namespace app
             var depAConfig = new DepAConfiguration();
             ConfigurationBinder.Bind(config, depAConfig);
 
-     
-             var depaClass = new DepAClass(depAConfig);
+            depAConfig.DepBConfiguration.Smtp = depAConfig.Smtp;
+
+
+            var depaClass = new DepAClass(depAConfig);
             depaClass.DepAMethod();
             Console.ReadKey();
         }

@@ -15,6 +15,7 @@ namespace depb
         {
             Console.WriteLine("DepBMethod");
             Console.WriteLine(_configuration.Smtp.Server);
+            Console.WriteLine(_configuration.Blah);
         }
     }
 }
