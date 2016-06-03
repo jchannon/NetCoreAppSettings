@@ -19,10 +19,8 @@ namespace app
             var depAConfig = new DepAConfiguration();
             ConfigurationBinder.Bind(config, depAConfig);
 
-            var depbConfig = new DepBConfiguration();
-            ConfigurationBinder.Bind(config, depbConfig);
-
-            var depaClass = new DepAClass();
+     
+             var depaClass = new DepAClass(depAConfig);
             depaClass.DepAMethod();
             Console.ReadKey();
         }

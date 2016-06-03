@@ -16,7 +16,7 @@ namespace depa
         {
             Console.WriteLine("DepAMethod");
             Console.WriteLine(_configuration.Logging.LogLevel.Microsoft);
-            var depbClass = new DepBClass();
+            var depbClass = new DepBClass(_configuration.DepBConfiguration);
             depbClass.DoSomething();
         }
     }

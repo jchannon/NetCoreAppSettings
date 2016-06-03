@@ -13,6 +13,7 @@ namespace depb
 
         public void DoSomething()
         {
+            Console.WriteLine("DepBMethod");
             Console.WriteLine(_configuration.Smtp.Server);
         }
     }

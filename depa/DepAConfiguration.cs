@@ -1,9 +1,13 @@
+using depb;
+
 namespace depa
 {
     public class DepAConfiguration
     {
         public Logging Logging { get; set; }
         public Smtp Smtp { get; set; }
+
+        public DepBConfiguration DepBConfiguration { get; set; }
     }
     
     public class LogLevel

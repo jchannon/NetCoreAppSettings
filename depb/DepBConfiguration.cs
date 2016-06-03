@@ -3,6 +3,8 @@
     public class DepBConfiguration
     {
         public Smtp Smtp { get; set; }
+
+        public string Blah { get; set; }
     }
     public class Smtp
     {
