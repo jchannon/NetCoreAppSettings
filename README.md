@@ -15,8 +15,8 @@ How?
 
 Using `Microsoft.Extensions.Configuration.ConfigurationBinder.Bind` you can bind a json file to a class.
 
-That way you can bind `appsettings.json` to a class in `depa`.
+That way you can bind `appsettings.json` to a class in `depa` and `depB`.
 
-To get `depb` configuration passed to it, it has to be sent into a `depb` class constructor.  The `depa` configuration class has to contain a `DepBConfiguration` property on it so that when `app` binds `appsettings.json` it can use `DepBConfiguration` values to bind. See the `appsettings.json` file in the repo.
+To get `depb` configuration passed to it, it has to be sent into a `depb` class constructor, the same applies to `depa`.  Using the binding and a container these configuration classes can be registered with a container and therefore automatically resolved.
 
-The downside to this is if you want to share values between libraries is that they have to be duplicated unless anyone knows a better way.
+
