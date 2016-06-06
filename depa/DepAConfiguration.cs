@@ -6,7 +6,6 @@ namespace depa
     {
         public Logging Logging { get; set; }
         public Smtp Smtp { get; set; }
-        public DepBConfiguration DepBConfiguration { get; set; }
     
     }
 

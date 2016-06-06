@@ -3,6 +3,8 @@ using System.Reflection;
 using Microsoft.Extensions.Configuration;
 using depa;
 using System.IO;
+using depb;
+using TinyIoC;
 
 namespace app
 {
@@ -19,10 +21,17 @@ namespace app
             var depAConfig = new DepAConfiguration();
             ConfigurationBinder.Bind(config, depAConfig);
 
-            depAConfig.DepBConfiguration.Smtp = depAConfig.Smtp;
+            var depBConfig = new DepBConfiguration();
+            ConfigurationBinder.Bind(config,depBConfig);
 
+            var container = TinyIoCContainer.Current;
+            container.Register(depAConfig);
+            container.Register(depBConfig);
 
-            var depaClass = new DepAClass(depAConfig);
+            container.Register<IDepAClass, DepAClass>();
+            container.Register<IDepBClass, DepBClass>();
+
+            var depaClass = container.Resolve<IDepAClass>();
             depaClass.DepAMethod();
             Console.ReadKey();
         }

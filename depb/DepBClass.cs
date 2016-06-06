@@ -2,7 +2,7 @@ using System;
 
 namespace depb
 {
-    public class DepBClass
+    public class DepBClass : IDepBClass
     {
         private readonly DepBConfiguration _configuration;
 

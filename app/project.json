@@ -11,7 +11,9 @@
             "type": "platform",
             "version": "1.0.0-rc2-3002702"
         },
+
         "depa": { "target": "project" },
+        "depb": {"target": "project"},
 
         "Microsoft.Extensions.Configuration.Binder": "1.0.0-rc2-final",
         "Microsoft.Extensions.Configuration.Json": "1.0.0-rc2-final"
